@@ -1,0 +1,141 @@
+.leftSideFigure {
+  width: 483px;
+  position: relative;
+  z-index: 1;
+}
+.cardFrontSide {
+  width: 447px;
+  height: 245px;
+  background-image: url(../images/cardFront.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 2;
+  top: 160px;
+  left: 140px;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cardBackSide {
+  width: 447px;
+  height: 245px;
+  background-image: url(../images/cardBack.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  top: 460px;
+  left: 260px;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cardNumber {
+  width: 80%;
+  font-size: 28px;
+  letter-spacing: 3.5px;
+  text-align: left;
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.cardNumber::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.nameAndDate {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 20px 40px 20px;
+  width: 85%;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+.leftNameSpan {
+  overflow: hidden;
+  width: 70%;
+  text-align: left;
+  color: #ffffff;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  background: transparent;
+  letter-spacing: 2px;
+}
+.leftNameSpan::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.leftExpDateSpan {
+  width: 30%;
+  overflow: hidden;
+  text-align: center;
+}
+.cvcCardBack {
+  position: absolute;
+  bottom: 110px;
+  right: 50px;
+  letter-spacing: 2px;
+  cursor: auto;
+  outline: none;
+  border: none;
+  background-color: #adb5be;
+  text-align: end;
+  color: #ffffff;
+  font-size: 15px;
+}
+.cvcCardBack::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+/* media styles  */
+
+@media screen and (max-width: 375px) {
+  .leftSideFigure,
+  .sideImgFigure {
+    width: 100%;
+  }
+  .sideMainImg {
+    height: 240px;
+    width: inherit;
+  }
+  .cardFrontSide {
+    width: 280px;
+    height: 160px;
+    top: 130px;
+    left: 20px;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-size: contain;
+  }
+  .cardBackSide {
+    width: 280px;
+    height: 160px;
+    background-size: contain;
+    z-index: 1;
+    top: 40px;
+    left: 85px;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .cvcCardBack {
+    right: 30px;
+    bottom: 75px;
+  }
+}
