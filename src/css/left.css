@@ -138,4 +138,18 @@
     right: 30px;
     bottom: 75px;
   }
+  .cardNumber {
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
+  .leftNameSpan {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .nameAndDate,
+  .leftExpDateSpan {
+    width: 100%;
+    letter-spacing: 1px;
+  }
 }

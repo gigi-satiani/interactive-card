@@ -24,9 +24,6 @@ export const LeftSide = (props) => {
               readOnly
             />
             <span className="leftExpDateSpan">
-              {/* {props.expirationMonth && props.expirationYear
-                ? props.expirationMonth / props.expirationYear
-                : "00/00"} */}
               {props.expirationMonth ? props.expirationMonth : "00"} /{" "}
               {props.expirationYear ? props.expirationYear : "00"}
             </span>

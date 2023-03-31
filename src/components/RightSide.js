@@ -111,6 +111,12 @@ export const RightSide = (props) => {
               type="number"
               value={expDateMonth}
               onChange={hendleChangeExpDate}
+              style={{
+                border:
+                  expDateMonth && expDateMonth.length > 1
+                    ? "solid 2px #6348FE"
+                    : "",
+              }}
             />
             <input
               className="dateSecond"
@@ -118,6 +124,12 @@ export const RightSide = (props) => {
               type="number"
               value={expDateYear}
               onChange={hendleChangeExpYear}
+              style={{
+                border:
+                  expDateYear && expDateYear.length > 1
+                    ? "solid 2px #6348FE"
+                    : "",
+              }}
             />
           </div>
           <input
@@ -126,6 +138,7 @@ export const RightSide = (props) => {
             placeholder="e.g. 123"
             value={cvc}
             onChange={hendleChangeCvc}
+            style={{ border: cvc && cvc.length > 2 ? "solid 2px #6348FE" : "" }}
           />
         </div>
       </div>
