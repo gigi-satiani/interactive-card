@@ -1,7 +1,8 @@
 import "../css/App.css";
-import { useState } from "react";
+import React, { useState } from "react";
 import { LeftSide } from "./LeftSide";
 import { RightSide } from "./RightSide";
+import { ThankYou } from "./thankYou";
 
 export const Main = () => {
   const [saxeli, setSaxeli] = useState("");
@@ -9,6 +10,15 @@ export const Main = () => {
   const [expirationMonth, setExpirationMonth] = useState("");
   const [expirationYear, setExpirationYear] = useState("");
   const [cvcCode, setCvcCode] = useState("");
+  const [showThanks, setShowThanks] = useState(false);
+
+  const handleThanks = () => {
+    setShowThanks(true);
+  };
+
+  const handleContinue = () => {
+    setShowThanks(false);
+  };
 
   return (
     <div className="formParent">
@@ -19,17 +29,28 @@ export const Main = () => {
         expirationYear={expirationYear}
         cvcCode={cvcCode}
       />
-      <form className="theForm">
-        <RightSide
-          setSaxeli={setSaxeli}
-          setCardNumber={setCardNumber}
-          setExpirationMonth={setExpirationMonth}
-          setExpirationYear={setExpirationYear}
-          setCvcCode={setCvcCode}
-        />
-      </form>
+
+      {/* <ThankYou /> */}
+      {showThanks ? (
+        <ThankYou handleContinue={handleContinue} />
+      ) : (
+        <form className="theForm">
+          <RightSide
+            setSaxeli={setSaxeli}
+            setCardNumber={setCardNumber}
+            setExpirationMonth={setExpirationMonth}
+            setExpirationYear={setExpirationYear}
+            setCvcCode={setCvcCode}
+          />
+        </form>
+      )}
       <div className="formSubmitButtonParent">
-        <button className="submitButton" type="submit">
+        <button
+          className="submitButton"
+          type="submit"
+          onClick={handleThanks}
+          style={{ display: showThanks ? "none" : "block" }}
+        >
           Confirm
         </button>
       </div>

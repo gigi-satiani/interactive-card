@@ -1,0 +1,47 @@
+.thankYouParent {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+.thankFigureParent {
+  width: 360px;
+}
+.thanksFigure {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.thankTextParent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 360px;
+}
+.thanksSpan {
+  color: #21092f;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 3.5px;
+  padding-bottom: 15px;
+}
+.thanksLabel {
+  color: #8f8694;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+}
+.thanksButton {
+  width: 100%;
+  padding: 18px;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #21092f;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
