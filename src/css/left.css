@@ -100,7 +100,7 @@
 
 /* media styles  */
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .leftSideFigure,
   .sideImgFigure {
     width: 100%;

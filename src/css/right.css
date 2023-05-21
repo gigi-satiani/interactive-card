@@ -87,7 +87,7 @@ input::-webkit-inner-spin-button {
   color: #ff5050;
 }
 /* media styles  */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   .rightSideParent {
     width: 100%;
   }
